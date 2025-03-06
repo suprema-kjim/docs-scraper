@@ -24,12 +24,12 @@ jobs:
             -e MEILISEARCH_API_KEY=$API_KEY \
             -v $CONFIG_FILE_PATH:/docs-scraper/config.json \
             getmeili/docs-scraper:v0.12.11 pipenv run ./docs_scraper config.json
-      - name: Swap index
-        env:
-          API_KEY: fasd89n3i8fp98j349nmapsd98gasu
-        run: |
-          curl \
-            -X POST 'https://desirable-jacquie-suprema-tw-69944824.koyeb.app/swap-indexes' \
-            -H "Authorization: Bearer $API_KEY" \
-            -H 'Content-Type: application/json' \
-            --data-binary '[ { "indexes": [ "docs-temp", "suprema-docs" ] } ]'
+      # - name: Swap index
+      #   env:
+      #     API_KEY: fasd89n3i8fp98j349nmapsd98gasu
+      #   run: |
+      #     curl \
+      #       -X POST 'https://desirable-jacquie-suprema-tw-69944824.koyeb.app/swap-indexes' \
+      #       -H "Authorization: Bearer $API_KEY" \
+      #       -H 'Content-Type: application/json' \
+      #       --data-binary '[ { "indexes": [ "docs-temp", "suprema-docs" ] } ]'

@@ -1,5 +1,5 @@
 {
-  "index_uid": "docs-temp",
+  "index_uid": "suprema-docs",
   "selectors_exclude": [ 
     "article.margin-bottom--lg h2", 
     "article.margin-bottom--lg p",
@@ -32,7 +32,7 @@
       "enabled": false
     },
     "synonyms": {
-      "biostar": [ "BioStar" ],
+      "biostar": [ "바이오스타" ],
       "바이오스타": [ "BioStar" ],
       "튜토리얼": [ "tutorial" ],
       "tutorial": [ "튜토리얼" ]
