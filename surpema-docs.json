@@ -1,5 +1,5 @@
 {
-  "index_uid": "suprema-docs",
+  "index_uid": "docs-temp",
   "selectors_exclude": [ 
     "article.margin-bottom--lg h2", 
     "article.margin-bottom--lg p",
@@ -37,7 +37,7 @@
   "selectors": {
     "default": {
       "lvl0": {
-        "selector": ".p-title > div > .menu__link.menu__link--active",
+        "selector": ".p-title > div > .menu__link--active",
         "global": true,
         "default_value": "Documentation"
       },
