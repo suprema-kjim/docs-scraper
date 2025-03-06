@@ -17,7 +17,10 @@
     "https://supremainc.github.io/docs/en"
   ],
   "scrape_start_urls": false,
-  "stop_urls": [],
+  "stop_urls": [
+    "https://supremainc.github.io/docs/legal",
+    "https://supremainc.github.io/docs/en/legal"
+  ],
   "custom_settings": {
     "filterableAttributes": ["lang", "hierarchy_lvl0"],
     "rankingRules": [
