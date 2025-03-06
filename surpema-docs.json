@@ -1,0 +1,54 @@
+{
+  "index_uid": "suprema-docs",
+  "selectors_exclude": [ 
+    "article.margin-bottom--lg h2", 
+    "article.margin-bottom--lg p",
+    "a.navbar__item.navbar__link",
+    "a.dropdown__link",
+    "a.menu__link",
+    "div[class*='release_items']",
+    "section#toc"
+  ],
+  "sitemap_urls": [
+    "https://supremainc.github.io/docs/sitemap.xml"
+  ],
+  "start_urls": [
+    "https://supremainc.github.io/docs"
+  ],
+  "scrape_start_urls": false,
+  "stop_urls": [],
+  "custom_settings": {
+    "filterableAttributes": ["lang", "hierarchy_lvl0"],
+    "rankingRules": [
+      "attribute",
+      "exactness",
+      "words",
+      "sort",
+      "proximity",
+      "typo"
+    ],
+    "typoTolerance": {
+      "enabled": false
+    },
+    "synonyms": {
+      "biostar": [ "BioStar", "biostar", "바이오스타" ]
+    }
+  },
+  "selectors": {
+    "default": {
+      "lvl0": {
+        "selector": ".p-title > div > .menu__link.menu__link--active",
+        "global": true,
+        "default_value": "Documentation"
+      },
+      "lvl1": "header h1",
+      "lvl2": "article h2",
+      "lvl3": "article h3",
+      "lvl4": "article h4",
+      "lvl5": "article h5, article td:first-child",
+      "lvl6": "article h6",
+      "text": "article .markdown p, article .markdown li, article .markdown td:last-child"
+    }
+  },
+  "strip_chars": " .,;:#"
+}
